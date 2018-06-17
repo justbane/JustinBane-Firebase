@@ -296,7 +296,7 @@
                             <h3>Contact me for projects<br>or questions.</h3>
                         </header>
                         <div class="content">
-                            <form id="contactForm">
+                            <form id="contactForm" v-show="showForm">
                                 <div class="field half first">
                                     <label :style="{ color: labelColor}" for="name">Name</label>
                                     <input  v-model="name" type="text" name="name" id="name">
@@ -321,9 +321,9 @@
                                 </div>
                                 <ul class="actions">
                                     <li><button class="button" id="submit" @click.prevent="submit">Send Message</button></li>
-                                    <li><p v-show="!isValid" :style="{ color: labelColor}" v-text="statusMsg"></p></li>
                                 </ul>
                             </form>
+                            <p v-show="!isValid" :style="{ color: labelColor}" v-text="statusMsg"></p>
                         </div>
                     </section>
                 </div>

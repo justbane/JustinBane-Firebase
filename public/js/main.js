@@ -2,6 +2,7 @@
 var app = new Vue({
     el: '#app',
     data: {
+        showForm: true,
         labelColor: '#000',
         isValid: true,
         statusMsg: 'Pease complete all fields!',
@@ -26,12 +27,14 @@ var app = new Vue({
                   subject: this.selectedSubject,
                   timestamp: new Date().getTime(),
               });
+              this.showForm = false;
               this.labelColor = 'green';
-              this.statusMsg = 'Message recieved!'
+              this.statusMsg = "Thanks, " + this.name + "! Message recieved. I'll get back to you asap."
+              this.isValid = false;
             } else {
                 this.isValid = false;
                 this.labelColor = 'red';
-                this.statusMsg = "Missing form data";
+                this.statusMsg = "Missing form data!";
             }
         }
     }

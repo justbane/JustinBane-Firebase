@@ -22,10 +22,10 @@ exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onCre
 
     const entry = snapshot.val();
     var mailData = {
-      from: String(entry.name + ' <' + entry.email + '>'),
+      from: entry.name + " <" + entry.email + ">",
       to: 'justbane@gmail.com',
       subject: entry.subject,
-      text: String(entry.name + "says:\n\n" + entry.message)
+      text: entry.name + " says:\n\n" + entry.message
     };
 
     mailgun.messages().send(mailData, function (error, body) {
