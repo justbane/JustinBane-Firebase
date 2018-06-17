@@ -32,7 +32,7 @@ exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onCre
         if (error) {
             console.log(error);
         } else {
-            return admin.database().ref(`/ContactMessages/${event.params.id}`).remove();
+            return admin.database().ref(`/ContactMessages/${event.params.id}`).removeValue();
         }
     });
 
