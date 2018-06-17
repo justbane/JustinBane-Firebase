@@ -8,325 +8,328 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+
+    <!-- Firebase setup -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCb3fz2lJK6s5n1wc35srAlxhIdQEN8JL4",
+            authDomain: "justinbane-com.firebaseapp.com",
+            databaseURL: "https://justinbane-com.firebaseio.com",
+            projectId: "justinbane-com",
+            storageBucket: "justinbane-com.appspot.com",
+            messagingSenderId: "892925702235"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
 
 <body class="">
-    <!-- Wrapper -->
-    <div id="wrapper" class="divided">
+    <div id="app">
+        <!-- Wrapper -->
+        <div id="wrapper" class="divided">
 
-        <!-- Shared -->
-        <section class="banner style1 orient-left content-align-left image-position-left fullscreen onload-image-fade-in onload-content-fade-right">
-            <div class="content">
-                <h1>Justin Bane</h1>
-                <p class="major">A skillful and creative developer, I crave a good problem to solve. As a Director of Technology for <a href="http://www.hdmz.com/" target="_blank">HDMZ</a>. My days are filled with finding solutions and overcoming technology challenges
-                    for our clients.</p>
-                <p>I have been developing websites and web applications for 10+ years using PHP, JavaScript (Node.js), SQL and No-SQL databases, PHP frameworks like Zend Framework and Laravel, and Express for Node.js. 3 years ago I started developing in
-                    <a href="https://www.swift.org/" target="_blank">Swift</a> for native iOS mobile applications.</p>
-                <p>Here you'll find more about my personal and professional interests and maybe a few development articles along the way.</p>
-                <ul class="actions horizontal">
-                    <li><a href="#programming" class="button wide smooth-scroll">Learn more</a></li>
-                    <li><a href="#skills" class="button smooth-scroll">Skills at a glance</a></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="./images/JustinBane-BW.jpg" alt="Justin Bane">
-            </div>
-        </section>
-        <!-- Index -->
-        <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in is-inactive" id="programming">
-            <div class="content">
-                <h2>Program all the things!</h2>
+            <!-- Shared -->
+            <section class="banner style1 orient-left content-align-left image-position-left fullscreen onload-image-fade-in onload-content-fade-right">
+                <div class="content">
+                    <h1>Justin Bane</h1>
+                    <p class="major">A skillful and creative developer, I crave a good problem to solve. As a Director of Technology for <a href="http://www.hdmz.com/" target="_blank">HDMZ</a>. My days are filled with finding solutions and overcoming technology challenges
+                        for our clients.</p>
+                    <p>I have been developing websites and web applications for 10+ years using PHP, JavaScript (Node.js), SQL and No-SQL databases, PHP frameworks like Zend Framework and Laravel, and Express for Node.js. 3 years ago I started developing in
+                        <a href="https://www.swift.org/" target="_blank">Swift</a> for native iOS mobile applications.</p>
+                    <p>Here you'll find more about my personal and professional interests and maybe a few development articles along the way.</p>
+                    <ul class="actions horizontal">
+                        <li><a href="#programming" class="button wide smooth-scroll">Learn more</a></li>
+                        <li><a href="#skills" class="button smooth-scroll">Skills at a glance</a></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="./images/JustinBane-BW.jpg" alt="Justin Bane">
+                </div>
+            </section>
+            <!-- Index -->
+            <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in is-inactive" id="programming">
+                <div class="content">
+                    <h2>Program all the things!</h2>
 
-                <blockquote>
-                    <strong>Programmer</strong><br> noun
-                    <ol>
-                        <li>
-                            an organism that turns coffee into software.
-                        </li>
-                    </ol>
-                </blockquote>
+                    <blockquote>
+                        <strong>Programmer</strong><br> noun
+                        <ol>
+                            <li>
+                                an organism that turns coffee into software.
+                            </li>
+                        </ol>
+                    </blockquote>
 
-                <p>Many many moons ago (how many moons since the 90's ?), while serving in the Air Force, the internet came along and changed everything. For me, that change was significant. I had to know more. I knew this was going to change the way we
-                    communicated. This was big. This led me quickly into web development and surprising love of programming.</p>
-                <p>Fast forward to today - I have been developing professionally, for the web, for almost 20 years. I have helped many clients and organizations see their projects realized. From portals to web applications - hell, I even wrote my own CMS
-                    at one point (ask me about that journey :).</p>
-                <p>This industry evolves constantly. There is always something to learn and it continues to be challenging work. Keep going to see more!</p>
+                    <p>Many many moons ago (how many moons since the 90's ?), while serving in the Air Force, the internet came along and changed everything. For me, that change was significant. I had to know more. I knew this was going to change the way we
+                        communicated. This was big. This led me quickly into web development and surprising love of programming.</p>
+                    <p>Fast forward to today - I have been developing professionally, for the web, for almost 20 years. I have helped many clients and organizations see their projects realized. From portals to web applications - hell, I even wrote my own CMS
+                        at one point (ask me about that journey :).</p>
+                    <p>This industry evolves constantly. There is always something to learn and it continues to be challenging work. Keep going to see more!</p>
 
-                <ul class="actions horizontal">
-                    <li><a href="#web-dev-1" class="button smooth-scroll">Web Development</a></li>
-                    <li><a href="#mobile-dev-1" class="button smooth-scroll">Mobile development!</a></li>
-                    <li><a href="#contact-me" class="button smooth-scroll">Contact me</a></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="./images/p+c=c.png" alt="">
-            </div>
-        </section>
-        <section id="web-dev-1" class="spotlight style1 color1 invert onscroll-image-fade-in content-align-left image-position-left orient-left is-inactive">
-            <div class="content">
-                <h2>Gilead Research Scholars Portals</h2>
-                <p>Gilead needed a portal for research scientists to apply for funding. It needed to allow a 3rd party committee to score and vote on applications as well as allow communication between the reviewers and review managers. This portal comprises
-                    a full user/group permission system, a committee approval workflow and scoring system and a notification system.</p>
+                    <ul class="actions horizontal">
+                        <li><a href="#web-dev-1" class="button smooth-scroll">Web Development</a></li>
+                        <li><a href="#mobile-dev-1" class="button smooth-scroll">Mobile development!</a></li>
+                        <li><a href="#contact-me" class="button smooth-scroll">Contact me</a></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="./images/p+c=c.png" alt="">
+                </div>
+            </section>
+            <section id="web-dev-1" class="spotlight style1 color1 invert onscroll-image-fade-in content-align-left image-position-left orient-left is-inactive">
+                <div class="content">
+                    <h2>Gilead Research Scholars Portals</h2>
+                    <p>Gilead needed a portal for research scientists to apply for funding. It needed to allow a 3rd party committee to score and vote on applications as well as allow communication between the reviewers and review managers. This portal comprises
+                        a full user/group permission system, a committee approval workflow and scoring system and a notification system.</p>
+                    <ul class="actions vertical">
+                        <li><a href="#web-dev-2" class="button smooth-scroll">Next</a></li>
+                    </ul>
+                </div>
+                <div class="image cinema">
+                    <img src="./images/ResearchScholars.jpg" alt="Gilead Research Scholars">
+                </div>
+            </section>
+            <section id="web-dev-2" class="spotlight style1 color3 invert onscroll-image-fade-in content-align-left image-position-left orient-right is-inactive">
+                <div class="content">
+                    <h2>Nektar</h2>
+                    <p>Nektar came to us in need of a complete refresh of their site and presence. This site features asynchronous news feeds. A full user/group permissions setup to allow editors for particular sections of the site while locking out others.
+                        A handy feature for department heads to keep their content up to date.</p>
+                    <ul class="actions vertical">
+                        <li><a href="#web-dev-3" class="button smooth-scroll">Next</a></li>
+                    </ul>
+                </div>
+                <div class="image cinema">
+                    <img src="./images/Nektar.jpg" alt="Nektar.com">
+                </div>
+            </section>
+            <section id="web-dev-3" class="spotlight style1 color7 invert onscroll-image-fade-in content-align-left image-position-left orient-left is-inactive">
+                <div class="content">
+                    <h2>NanoString Technologies</h2>
+                    <p>NanoString's site boasts a full user login system for their customers. A custom OAuth integration with the NanoString Store and a publications and events system.</p>
+                    <ul class="actions vertical">
+                        <li><a href="#mobile-dev-1" class="button smooth-scroll">Next</a></li>
+                    </ul>
+                </div>
+                <div class="image cinema">
+                    <img src="./images/NanoString.jpg" alt="NanoString.com">
+                </div>
+            </section>
+            <section class="spotlight onscroll-image-fade-in style3 iphone orient-left content-align-left image-position-center is-inactive" id="mobile-dev-1">
+                <div class="content">
+                    <h2>MightyMet: Metronome</h2>
+                    <p>
+                        MightyMet is a metronome application that features tap tempo, click sound customization and custom UI dial control element. It uses the <a href="https://www.firebase.com/" target="_blank">FireBase</a> BaaS architecture for storing
+                        playlist information and social login capability.
+                    </p>
+                    <ul class="actions vertical">
+                        <li><a href="#mobile-dev-2" class="button smooth-scroll">See another</a></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="./images/MightyMet.jpg" alt="">
+                </div>
+            </section>
+            <section class="spotlight onscroll-image-fade-in style3 color6 invert iphone orient-right content-align-left image-position-center is-inactive" id="mobile-dev-2">
+                <div class="content">
+                    <h2>MightyMinders: Location based reminders</h2>
+                    <p>
+                        MightyMinders is a location based application that allows users to set/share reminders with friends and family. It uses the Core Location and MapKit libraries as well as various libraries for UI customizations. It uses the <a href="https://www.firebase.com/"
+                            target="_blank">FireBase</a> BaaS architecture for storing information and social login capability.
+                    </p>
+                    <ul class="actions vertical">
+                        <li><a href="#skills" class="button smooth-scroll">Skills breakdown</a></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="./images/MightyMinders.jpg" alt="">
+                </div>
+            </section>
+            <section class="wrapper style1 align-center onscroll-fade-in is-inactive" id="skills">
+                <div class="inner">
+                    <h2>Skillset Overview</h2>
+                    <p>These are the tools that make the magic happen.</p>
+                    <div class="items style2 small onscroll-fade-in is-inactive">
+                        <section>
+                            <div class="inner">
+                                <span class="icon style2 major fa-code"></span>
+                                <h3>Server Side</h3>
+                                <section>
+                                    <div class="content">
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>PHP</td>
+                                                        <td>10+ Years</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Swift</td>
+                                                        <td>3 years</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Node.js</td>
+                                                        <td>3 Years</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">Python</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="inner">
+                                <span class="icon style2 major fa-css3"></span>
+                                <h3>Client Side</h3>
+                                <section>
+                                    <div class="content">
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Javascript</td>
+                                                        <td>10+ Years</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>jQuery</td>
+                                                        <td>7+ years</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Angular</td>
+                                                        <td>2 Years</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CSS</td>
+                                                        <td>10 Years</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bootstrap</td>
+                                                        <td>4 Years</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">Flexbox</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="inner">
+                                <span class="icon style2 major fa-code-fork"></span>
+                                <h3>MVC Frameworks</h3>
+                                <section>
+                                    <div class="content">
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Zend Framework</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Symphony</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Laravel</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Express (Node.js)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="inner">
+                                <span class="icon style2 major fa-apple"></span>
+                                <h3>iOS</h3>
+                                <section>
+                                    <div class="content">
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Swift</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ARKit/SceneKit (Augmented Reality &amp; 3D Gaming)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Core Location, Core Data, Local &amp; Push notifications</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Firebase, AWS (BaaS)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </div>
                 <ul class="actions vertical">
-                    <li><a href="#web-dev-2" class="button smooth-scroll">Next</a></li>
+                    <li><a href="#contact-me" class="button smooth-scroll">Contact me below!</a></li>
                 </ul>
-            </div>
-            <div class="image cinema">
-                <img src="./images/ResearchScholars.jpg" alt="Gilead Research Scholars">
-            </div>
-        </section>
-        <section id="web-dev-2" class="spotlight style1 color3 invert onscroll-image-fade-in content-align-left image-position-left orient-right is-inactive">
-            <div class="content">
-                <h2>Nektar</h2>
-                <p>Nektar came to us in need of a complete refresh of their site and presence. This site features asynchronous news feeds. A full user/group permissions setup to allow editors for particular sections of the site while locking out others.
-                    A handy feature for department heads to keep their content up to date.</p>
-                <ul class="actions vertical">
-                    <li><a href="#web-dev-3" class="button smooth-scroll">Next</a></li>
-                </ul>
-            </div>
-            <div class="image cinema">
-                <img src="./images/Nektar.jpg" alt="Nektar.com">
-            </div>
-        </section>
-        <section id="web-dev-3" class="spotlight style1 color7 invert onscroll-image-fade-in content-align-left image-position-left orient-left is-inactive">
-            <div class="content">
-                <h2>NanoString Technologies</h2>
-                <p>NanoString's site boasts a full user login system for their customers. A custom OAuth integration with the NanoString Store and a publications and events system.</p>
-                <ul class="actions vertical">
-                    <li><a href="#mobile-dev-1" class="button smooth-scroll">Next</a></li>
-                </ul>
-            </div>
-            <div class="image cinema">
-                <img src="./images/NanoString.jpg" alt="NanoString.com">
-            </div>
-        </section>
-        <section class="spotlight onscroll-image-fade-in style3 iphone orient-left content-align-left image-position-center is-inactive" id="mobile-dev-1">
-            <div class="content">
-                <h2>MightyMet: Metronome</h2>
-                <p>
-                    MightyMet is a metronome application that features tap tempo, click sound customization and custom UI dial control element. It uses the <a href="https://www.firebase.com/" target="_blank">FireBase</a> BaaS architecture for storing
-                    playlist information and social login capability.
-                </p>
-                <ul class="actions vertical">
-                    <li><a href="#mobile-dev-2" class="button smooth-scroll">See another</a></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="./images/MightyMet.jpg" alt="">
-            </div>
-        </section>
-        <section class="spotlight onscroll-image-fade-in style3 color6 invert iphone orient-right content-align-left image-position-center is-inactive" id="mobile-dev-2">
-            <div class="content">
-                <h2>MightyMinders: Location based reminders</h2>
-                <p>
-                    MightyMinders is a location based application that allows users to set/share reminders with friends and family. It uses the Core Location and MapKit libraries as well as various libraries for UI customizations. It uses the <a href="https://www.firebase.com/"
-                        target="_blank">FireBase</a> BaaS architecture for storing information and social login capability.
-                </p>
-                <ul class="actions vertical">
-                    <li><a href="#skills" class="button smooth-scroll">Skills breakdown</a></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="./images/MightyMinders.jpg" alt="">
-            </div>
-        </section>
-        <section class="wrapper style1 align-center onscroll-fade-in is-inactive" id="skills">
+            </section>
+        </div>
+        <section class="wrapper style1 align-center" id="contact-me">
             <div class="inner">
-                <h2>Skillset Overview</h2>
-                <p>These are the tools that make the magic happen.</p>
-                <div class="items style2 small onscroll-fade-in is-inactive">
+                <div class="index align-left">
                     <section>
-                        <div class="inner">
-                            <span class="icon style2 major fa-code"></span>
-                            <h3>Server Side</h3>
-                            <section>
-                                <div class="content">
-                                    <div class="table-wrapper">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>PHP</td>
-                                                    <td>10+ Years</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Swift</td>
-                                                    <td>3 years</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Node.js</td>
-                                                    <td>3 Years</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2">Python</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                        <header>
+                            <h3>Contact me for projects<br>or questions.</h3>
+                        </header>
+                        <div class="content">
+                            <form id="contactForm">
+                                <div class="field half first">
+                                    <label :style="{ color: labelColor}" for="name">Name</label>
+                                    <input  v-model="name" type="text" name="name" id="name">
+                                </div>
+                                <div class="field half">
+                                    <label :style="{ color: labelColor}" for="email">Email</label>
+                                    <input v-model="email" type="email" name="email" id="email">
+                                </div>
+                                <div class="field">
+                                    <label :style="{ color: labelColor}" for="subject">Subject</label>
+                                    <div class="select-wrapper">
+                                        <select v-model="selectedSubject" name="subject" id="subject">
+                                            <option v-for="subject in subjects">
+                                                {{ subject }}
+                                            </option>
+                                        </select>
                                     </div>
                                 </div>
-                            </section>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="inner">
-                            <span class="icon style2 major fa-css3"></span>
-                            <h3>Client Side</h3>
-                            <section>
-                                <div class="content">
-                                    <div class="table-wrapper">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Javascript</td>
-                                                    <td>10+ Years</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>jQuery</td>
-                                                    <td>7+ years</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Angular</td>
-                                                    <td>2 Years</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>CSS</td>
-                                                    <td>10 Years</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Bootstrap</td>
-                                                    <td>4 Years</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2">Flexbox</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                <div class="field">
+                                    <label :style="{ color: labelColor}" for="message">Message</label>
+                                    <textarea  v-model="message" name="message" id="message" rows="6"></textarea>
                                 </div>
-                            </section>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="inner">
-                            <span class="icon style2 major fa-code-fork"></span>
-                            <h3>MVC Frameworks</h3>
-                            <section>
-                                <div class="content">
-                                    <div class="table-wrapper">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Zend Framework</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Symphony</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Laravel</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Express (Node.js)</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="inner">
-                            <span class="icon style2 major fa-apple"></span>
-                            <h3>iOS</h3>
-                            <section>
-                                <div class="content">
-                                    <div class="table-wrapper">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Swift</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ARKit/SceneKit (Augmented Reality &amp; 3D Gaming)</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Core Location, Core Data, Local &amp; Push notifications</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Firebase, AWS (BaaS)</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </section>
+                                <ul class="actions">
+                                    <li><button class="button" id="submit" @click.prevent="submit">Send Message</button></li>
+                                    <li><p v-show="!isValid" :style="{ color: labelColor}" v-text="statusMsg"></p></li>
+                                </ul>
+                            </form>
                         </div>
                     </section>
                 </div>
             </div>
-            <ul class="actions vertical">
-                <li><a href="#contact-me" class="button smooth-scroll">Contact me below!</a></li>
-            </ul>
         </section>
     </div>
-    <section class="wrapper style1 align-center" id="contact-me">
-        <div class="inner">
-            <div class="index align-left">
-                <section>
-                    <header>
-                        <h3>Contact me for projects<br>or questions.</h3>
-                    </header>
-                    <div class="content">
-                        <form method="post" action="#" id="contactForm">
-                            <div class="field half first">
-                                <label for="name">Name</label>
-                                <input type="text" name="name" id="name" value="">
-                            </div>
-                            <div class="field half">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email" value="">
-                            </div>
-                            <div class="field">
-                                <label for="subject">Subject</label>
-                                <div class="select-wrapper">
-                                    <select name="subject" id="subject">
-				<option value="">- Subject -</option>
-				<option value="Lets work together">Lets work together</option>
-				<option value="Just saying hi">Just saying hi</option>
-				<option value="Random request">Random request</option>
-				<option value="Question for you">Question for you</option>
-			</select>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label for="comments">Message</label>
-                                <textarea name="comments" id="comments" rows="6"></textarea>
-                            </div>
-                            <ul class="actions">
-                                <li><a class="button" id="submit" href="#">Send Message</a></li>
-                            </ul>
-                        </form>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </section>
-    <!-- Drums -->
-
-
-    <!-- Scripts -->
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCb3fz2lJK6s5n1wc35srAlxhIdQEN8JL4",
-        authDomain: "justinbane-com.firebaseapp.com",
-        databaseURL: "https://justinbane-com.firebaseio.com",
-        projectId: "justinbane-com",
-        storageBucket: "justinbane-com.appspot.com",
-        messagingSenderId: "892925702235"
-      };
-      firebase.initializeApp(config);
-    </script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.scrollex.min.js"></script>
     <script src="./js/jquery.scrolly.min.js"></script>

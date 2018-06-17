@@ -1,124 +1,41 @@
-var ContactForm = (function($) {
+// Vue
+var app = new Vue({
+    el: '#app',
+    data: {
+        labelColor: '#000',
+        isValid: true,
+        statusMsg: 'Pease complete all fields!',
+        name: '',
+        email: '',
+        selectedSubject: '',
+        message: '',
+        subjects: ['Just saying hi', 'Lets work together', 'Random request', 'Question for you'],
+    },
+    methods: {
+        submit: function() {
+            // Get a reference to the database service
+            var database = firebase.database();
 
-    var form = $("#contactForm");
-    var submit = $("#submit");
-    var error = false;
+                console.log(this.name);
 
-    function validate(msg) {
-        form.find('.error').remove();
-        try {
-            if(msg.responseJSON.debugReason) {
-                form.prepend('<p class="error" style="color: red;">'+ msg.responseJSON.debugReason +'</p>')
+            if(this.message != "" && this.name != "" && this.email != "") {
+                database.ref('/ContactMessages/').push({
+                  message: this.message,
+                  name: this.name,
+                  email: this.email,
+                  subject: this.selectedSubject,
+                  timestamp: new Date().getTime(),
+              });
+              this.labelColor = 'green';
+              this.statusMsg = 'Message recieved!'
+            } else {
+                this.isValid = false;
+                this.labelColor = 'red';
+                this.statusMsg = "Missing form data";
             }
-        } catch(error) {
-            submit.addClass("icon fa-check-circle");
-            form.find("input, select, textarea").val("").css({
-                'border-color': 'none'
-            });
-            return;
-        }
-
-
-        form.find("input").each(function(i, e) {
-            if (!$(e).val()) {
-                $(e).css({
-                    'border-color': 'red'
-                });
-            }
-        });
-        form.find("select").each(function(i, e) {
-            if (!$(e).val()) {
-                $(e).css({
-                    'border-color': 'red'
-                });
-            }
-        });
-        form.find("textarea").each(function(i, e) {
-            if (!$(e).val()) {
-                $(e).css({
-                    'border-color': 'red'
-                });
-            }
-        });
-    }
-
-    function process() {
-        if (!error) {
-            $.ajax({
-                    url: "/",
-                    method: "POST",
-                    data: form.serializeArray()
-                })
-                .done(function(msg) {
-                    validate(msg);
-                })
-                .fail(function(msg) {
-                    validate(msg);
-                })
-                .always(function() {
-                    // do something always
-                });
         }
     }
-
-    return {
-        process: process
-    };
-
-})(jQuery);
-
-var Drums = (function($) {
-
-    var url = "/drums/instagram";
-
-    function getFeed() {
-        $.ajax({
-            url: url,
-            method: "GET"
-        }).done(function(data) {
-            if (data.data) {
-                doGallery(data.data);
-            }
-        }).fail(function() {
-            // fail here
-        });
-    }
-
-    function doGallery(data) {
-        var keys = Object.keys(data);
-        $.each(keys.reverse(), function(i, e) {
-            var article = '<article>';
-            article += '<div onclick="window.open($(this).data(\'href\'));" data-href="' + data[e].link + '" class="image"><img style="" src="' + data[e].thumbnail + '" alt="" /></div>';
-            article += '<div class="caption">';
-            article += '<p>' + data[e].caption.substring(0, 64); + '...</p>';
-            article += '<ul class="actions">';
-            article += '<li><span class="button small">Details</span></li>';
-            article += '</ul>';
-            article += '</div>';
-            article += '</article>';
-
-            var gallery = $(".gallery >.inner");
-            gallery.append(article);
-        });
-
-    }
-
-    return {
-        getFeed: getFeed
-    };
-
-})(jQuery);
-
-// Doc ready general functions
-(function($) {
-
-    $("#submit").on("click", function(e) {
-        e.preventDefault();
-        ContactForm.process();
-    });
-
-})(jQuery);
-
+});
 
 // Skel and layout code
 (function($) {
