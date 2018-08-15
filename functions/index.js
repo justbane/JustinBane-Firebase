@@ -14,7 +14,7 @@ var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 admin.initializeApp();
 
-exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onWrite((snapshot, context) => {
+exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onCreate((snapshot, context) => {
 
     if (!snapshot.after.val()) {
         return;
@@ -32,7 +32,7 @@ exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onWri
         if (error) {
             console.log(error);
         } else {
-            return admin.database().ref('/ContactMessages/' + context.params.id).remove();
+            admin.database().ref('/ContactMessages/' + context.params.id).remove();
         }
     });
 
