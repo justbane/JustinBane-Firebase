@@ -16,11 +16,11 @@ admin.initializeApp();
 
 exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onWrite((snapshot, context) => {
 
-    if (!snapshot.val()) {
+    if (!snapshot.after.val()) {
         return;
     }
 
-    const entry = snapshot.val();
+    const entry = snapshot.after.val();
     var mailData = {
       from: entry.name + " <" + entry.email + ">",
       to: 'justbane@gmail.com',
