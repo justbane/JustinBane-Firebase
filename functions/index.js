@@ -14,7 +14,7 @@ var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 admin.initializeApp();
 
-exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onCreate((snapshot, context) => {
+exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onWrite((snapshot, context) => {
 
     if (!snapshot.val()) {
         return;
