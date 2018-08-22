@@ -14,13 +14,13 @@ var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 admin.initializeApp();
 
-exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onCreate((snapshot, context) => {
+exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onWrite((event, context) => {
+    const entry = event.after.val();
 
-    if (!snapshot.after.val()) {
-        return;
+    if (!entry) {
+        return false;
     }
 
-    const entry = snapshot.after.val();
     var mailData = {
       from: entry.name + " <" + entry.email + ">",
       to: 'justbane@gmail.com',
@@ -28,14 +28,13 @@ exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onCre
       text: entry.name + " says:\n\n" + entry.message
     };
 
-    mailgun.messages().send(mailData, function (error, body) {
-        if (error) {
-            console.log(error);
-        } else {
-            admin.database().ref('/ContactMessages/' + context.params.id).remove();
-        }
+    return mailgun.messages().send(mailData).then(() => {
+        console.log('Success');
+        admin.database().ref('/ContactMessages/' + context.params.id).remove();
+    }).catch((error) => {
+        console.log(error);
     });
 
-    return null;
+    //return null;
 
 });
