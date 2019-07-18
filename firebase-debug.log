@@ -1,0 +1,40 @@
+[debug] [2019-07-18T03:06:22.250Z] ----------------------------------------------------------------------
+[debug] [2019-07-18T03:06:22.255Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-07-18T03:06:22.255Z] CLI Version:   6.9.2
+[debug] [2019-07-18T03:06:22.255Z] Platform:      darwin
+[debug] [2019-07-18T03:06:22.255Z] Node Version:  v8.16.0
+[debug] [2019-07-18T03:06:22.256Z] Time:          Wed Jul 17 2019 20:06:22 GMT-0700 (PDT)
+[debug] [2019-07-18T03:06:22.256Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-18T03:06:22.340Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-18T03:06:22.341Z] > authorizing via signed-in user
+[debug] [2019-07-18T03:06:22.341Z] [iam] checking project justinbane-com for permissions ["firebase.projects.get"]
+[debug] [2019-07-18T03:06:22.344Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-07-18T03:06:22.345Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-07-18T03:06:22.639Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-18T03:06:22.689Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justinbane-com:testIamPermissions  
+
+[debug] [2019-07-18T03:06:23.041Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-18T03:06:23.043Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/justinbane-com  
+ 
+[debug] [2019-07-18T03:06:23.338Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/justbane/_FireBase/justinbane.com'...
+[info] 
+[warn] ⚠  Your functions directory does not specify a Node version.
+   - Learn more at https://firebase.google.com/docs/functions/manage-functions#set_runtime_options
+[debug] [2019-07-18T03:06:23.349Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/892925702235/clients/_:getWebAppConfig  
+ 
+[debug] [2019-07-18T03:06:23.350Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/892925702235:getServerAppConfig  
+ 
+[debug] [2019-07-18T03:06:23.623Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-07-18T03:06:23.811Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/justbane/_FireBase/justinbane.com/functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-07-18T03:06:24.549Z] Functions runtime initialized.
+[debug] [2019-07-18T03:06:24.550Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be version >7.0.0 so your version is too old. You can probably fix this by running "npm install firebase-admin@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
