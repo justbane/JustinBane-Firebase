@@ -29,7 +29,7 @@ var app = new Vue({
               });
               this.showForm = false;
               this.labelColor = 'green';
-              this.statusMsg = "Thanks, " + this.name + "! Message recieved. I'll get back to you asap."
+              this.statusMsg = "Thanks, " + this.name + "! Message received. I'll get back to you asap."
               this.isValid = false;
             } else {
                 this.isValid = false;
