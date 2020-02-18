@@ -35,3 +35,82 @@
 [debug] [2019-09-28T17:13:34.080Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
 [warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
 [info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-02-18T23:28:27.480Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T23:28:27.481Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-02-18T23:28:27.482Z] CLI Version:   7.4.0
+[debug] [2020-02-18T23:28:27.482Z] Platform:      darwin
+[debug] [2020-02-18T23:28:27.482Z] Node Version:  v10.16.3
+[debug] [2020-02-18T23:28:27.482Z] Time:          Tue Feb 18 2020 15:28:27 GMT-0800 (Pacific Standard Time)
+[debug] [2020-02-18T23:28:27.482Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-02-18T23:28:27.493Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-18T23:28:27.494Z] > authorizing via signed-in user
+[debug] [2020-02-18T23:28:27.494Z] [iam] checking project justinbane-com for permissions ["firebase.projects.get"]
+[debug] [2020-02-18T23:28:27.495Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-18T23:28:27.495Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-18T23:28:27.668Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-18T23:28:27.684Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justinbane-com:testIamPermissions  
+
+[debug] [2020-02-18T23:28:27.934Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-18T23:28:27.936Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/justinbane-com  
+ 
+[debug] [2020-02-18T23:28:28.120Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/justinbane/_FireBase/justinbane.com'...
+[info] 
+[debug] [2020-02-18T23:28:28.125Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/justinbane-com/webApps/-/config  
+ 
+[warn] ⚠  Your functions directory does not specify a Node version.
+   - Learn more at https://firebase.google.com/docs/functions/manage-functions#set_runtime_options
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-02-18T23:28:28.711Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/justinbane/_FireBase/justinbane.com/functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-02-18T23:28:28.964Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/justinbane/_FireBase/justinbane.com/functions","node_version":"10.16.3"}
+[debug] [2020-02-18T23:28:28.964Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2020-02-18T23:28:28.966Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"5.12.1","resolution":"/Users/justinbane/_FireBase/justinbane.com/functions/node_modules/firebase-admin/lib/index.js"}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be version >8.0.0 so your version is too old. You can probably fix this by running "npm install firebase-admin@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-02-18T23:31:00.971Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T23:31:00.973Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-02-18T23:31:00.973Z] CLI Version:   7.13.1
+[debug] [2020-02-18T23:31:00.973Z] Platform:      darwin
+[debug] [2020-02-18T23:31:00.973Z] Node Version:  v10.16.3
+[debug] [2020-02-18T23:31:00.974Z] Time:          Tue Feb 18 2020 15:31:00 GMT-0800 (Pacific Standard Time)
+[debug] [2020-02-18T23:31:00.974Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T23:31:00.974Z] 
+[debug] [2020-02-18T23:31:00.979Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-18T23:31:00.979Z] > authorizing via signed-in user
+[debug] [2020-02-18T23:31:00.980Z] [iam] checking project justinbane-com for permissions ["firebase.projects.get"]
+[debug] [2020-02-18T23:31:00.981Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justinbane-com:testIamPermissions  
+
+[debug] [2020-02-18T23:31:01.124Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-18T23:31:01.126Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/justinbane-com  
+ 
+[debug] [2020-02-18T23:31:01.316Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/justinbane/_FireBase/justinbane.com'...
+[info] 
+[debug] [2020-02-18T23:31:01.321Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/justinbane-com/webApps/-/config  
+ 
+[warn] ⚠  Your functions directory does not specify a Node version.
+   - Learn more at https://firebase.google.com/docs/functions/manage-functions#set_runtime_options
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-02-18T23:31:01.900Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/justinbane/_FireBase/justinbane.com/functions" for Cloud Functions...
+[debug] [2020-02-18T23:31:01.934Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-18T23:31:01.934Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-18T23:31:01.934Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-18T23:31:01.935Z] [worker-~diagnostic~-03e34f78-5d96-48e7-b02f-bf697be200fb]: Assigning socketPath: /var/folders/35/yzs4p8cx5hs59ct3gqqqh6qc0000gn/T/fire_emu_44040.sock
+[debug] [2020-02-18T23:31:01.935Z] [worker-~diagnostic~-03e34f78-5d96-48e7-b02f-bf697be200fb]: BUSY
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-02-18T23:31:02.159Z] [runtime-status] [44040] Functions runtime initialized. {"cwd":"/Users/justinbane/_FireBase/justinbane.com/functions","node_version":"10.16.3"}
+[debug] [2020-02-18T23:31:02.160Z] [runtime-status] [44040] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-18T23:31:02.161Z] [runtime-status] [44040] Resolved module firebase-admin {"declared":true,"installed":true,"version":"5.12.1","resolution":"/Users/justinbane/_FireBase/justinbane.com/functions/node_modules/firebase-admin/lib/index.js"}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be version >8.0.0 so your version is too old. You can probably fix this by running "npm install firebase-admin@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-02-18T23:31:02.175Z] [worker-~diagnostic~-03e34f78-5d96-48e7-b02f-bf697be200fb]: exited
+[debug] [2020-02-18T23:31:02.175Z] [worker-~diagnostic~-03e34f78-5d96-48e7-b02f-bf697be200fb]: FINISHED
