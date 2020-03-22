@@ -1,0 +1,45 @@
+[debug] [2020-03-22T01:52:20.220Z] ----------------------------------------------------------------------
+[debug] [2020-03-22T01:52:20.222Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-03-22T01:52:20.222Z] CLI Version:   7.13.1
+[debug] [2020-03-22T01:52:20.222Z] Platform:      darwin
+[debug] [2020-03-22T01:52:20.222Z] Node Version:  v10.16.3
+[debug] [2020-03-22T01:52:20.225Z] Time:          Sat Mar 21 2020 18:52:20 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-03-22T01:52:20.225Z] ----------------------------------------------------------------------
+[debug] [2020-03-22T01:52:20.225Z] 
+[debug] [2020-03-22T01:52:20.236Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-22T01:52:20.236Z] > authorizing via signed-in user
+[debug] [2020-03-22T01:52:20.236Z] [iam] checking project justinbane-com for permissions ["firebase.projects.get"]
+[debug] [2020-03-22T01:52:20.238Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-22T01:52:20.238Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-22T01:52:20.488Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-22T01:52:20.506Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/justinbane-com:testIamPermissions  
+
+[debug] [2020-03-22T01:52:20.753Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-22T01:52:20.754Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/justinbane-com  
+ 
+[debug] [2020-03-22T01:52:21.017Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/justinbane/_FireBase/justinbane.com'...
+[info] 
+[debug] [2020-03-22T01:52:21.022Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/justinbane-com/webApps/-/config  
+ 
+[warn] ⚠  Your functions directory does not specify a Node version.
+   - Learn more at https://firebase.google.com/docs/functions/manage-functions#set_runtime_options
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-03-22T01:52:21.442Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/justinbane/_FireBase/justinbane.com/functions" for Cloud Functions...
+[debug] [2020-03-22T01:52:21.480Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-22T01:52:21.481Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-22T01:52:21.481Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-22T01:52:21.481Z] [worker-~diagnostic~-f71614fb-ca29-4974-8468-54ebb112678d]: Assigning socketPath: /var/folders/35/yzs4p8cx5hs59ct3gqqqh6qc0000gn/T/fire_emu_22496.sock
+[debug] [2020-03-22T01:52:21.481Z] [worker-~diagnostic~-f71614fb-ca29-4974-8468-54ebb112678d]: BUSY
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-03-22T01:52:21.750Z] [runtime-status] [22496] Functions runtime initialized. {"cwd":"/Users/justinbane/_FireBase/justinbane.com/functions","node_version":"10.16.3"}
+[debug] [2020-03-22T01:52:21.752Z] [runtime-status] [22496] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-22T01:52:21.754Z] [runtime-status] [22496] Resolved module firebase-admin {"declared":true,"installed":true,"version":"5.12.1","resolution":"/Users/justinbane/_FireBase/justinbane.com/functions/node_modules/firebase-admin/lib/index.js"}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be version >8.0.0 so your version is too old. You can probably fix this by running "npm install firebase-admin@latest" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-03-22T01:52:21.772Z] [worker-~diagnostic~-f71614fb-ca29-4974-8468-54ebb112678d]: exited
+[debug] [2020-03-22T01:52:21.772Z] [worker-~diagnostic~-f71614fb-ca29-4974-8468-54ebb112678d]: FINISHED
