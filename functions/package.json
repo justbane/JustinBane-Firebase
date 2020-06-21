@@ -6,5 +6,8 @@
     "firebase-functions": "^1.0.3",
     "mailgun-js": "~0.7.0"
   },
-  "private": true
+  "private": true,
+  "engines": {
+    "node": "10"
+  }
 }
