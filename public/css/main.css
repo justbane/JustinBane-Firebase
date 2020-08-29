@@ -5924,9 +5924,6 @@
 		-webkit-transition-delay: 0.15s;
 		-ms-transition-delay: 0.15s;
 		transition-delay: 0.15s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(3) .image img {
@@ -5934,9 +5931,6 @@
 		-webkit-transition-delay: 0.3s;
 		-ms-transition-delay: 0.3s;
 		transition-delay: 0.3s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(4) .image img {
@@ -5944,9 +5938,6 @@
 		-webkit-transition-delay: 0.45s;
 		-ms-transition-delay: 0.45s;
 		transition-delay: 0.45s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(5) .image img {
@@ -5954,9 +5945,6 @@
 		-webkit-transition-delay: 0.6s;
 		-ms-transition-delay: 0.6s;
 		transition-delay: 0.6s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(6) .image img {
@@ -5964,9 +5952,6 @@
 		-webkit-transition-delay: 0.75s;
 		-ms-transition-delay: 0.75s;
 		transition-delay: 0.75s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(7) .image img {
@@ -5974,9 +5959,6 @@
 		-webkit-transition-delay: 0.9s;
 		-ms-transition-delay: 0.9s;
 		transition-delay: 0.9s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(8) .image img {
@@ -5984,9 +5966,6 @@
 		-webkit-transition-delay: 1.05s;
 		-ms-transition-delay: 1.05s;
 		transition-delay: 1.05s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(9) .image img {
@@ -5994,9 +5973,6 @@
 		-webkit-transition-delay: 1.2s;
 		-ms-transition-delay: 1.2s;
 		transition-delay: 1.2s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(10) .image img {
@@ -6004,9 +5980,6 @@
 		-webkit-transition-delay: 1.35s;
 		-ms-transition-delay: 1.35s;
 		transition-delay: 1.35s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(11) .image img {
@@ -6014,9 +5987,6 @@
 		-webkit-transition-delay: 1.5s;
 		-ms-transition-delay: 1.5s;
 		transition-delay: 1.5s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(12) .image img {
@@ -6024,9 +5994,6 @@
 		-webkit-transition-delay: 1.65s;
 		-ms-transition-delay: 1.65s;
 		transition-delay: 1.65s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(13) .image img {
@@ -6034,9 +6001,6 @@
 		-webkit-transition-delay: 1.8s;
 		-ms-transition-delay: 1.8s;
 		transition-delay: 1.8s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(14) .image img {
@@ -6044,9 +6008,6 @@
 		-webkit-transition-delay: 1.95s;
 		-ms-transition-delay: 1.95s;
 		transition-delay: 1.95s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(15) .image img {
@@ -6054,9 +6015,6 @@
 		-webkit-transition-delay: 2.1s;
 		-ms-transition-delay: 2.1s;
 		transition-delay: 2.1s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(16) .image img {
@@ -6064,9 +6022,6 @@
 		-webkit-transition-delay: 2.25s;
 		-ms-transition-delay: 2.25s;
 		transition-delay: 2.25s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(17) .image img {
@@ -6074,9 +6029,6 @@
 		-webkit-transition-delay: 2.4s;
 		-ms-transition-delay: 2.4s;
 		transition-delay: 2.4s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(18) .image img {
@@ -6084,9 +6036,6 @@
 		-webkit-transition-delay: 2.55s;
 		-ms-transition-delay: 2.55s;
 		transition-delay: 2.55s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(19) .image img {
@@ -6094,9 +6043,6 @@
 		-webkit-transition-delay: 2.7s;
 		-ms-transition-delay: 2.7s;
 		transition-delay: 2.7s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(20) .image img {
@@ -6104,9 +6050,6 @@
 		-webkit-transition-delay: 2.85s;
 		-ms-transition-delay: 2.85s;
 		transition-delay: 2.85s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(21) .image img {
@@ -6114,9 +6057,6 @@
 		-webkit-transition-delay: 3s;
 		-ms-transition-delay: 3s;
 		transition-delay: 3s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(22) .image img {
@@ -6124,9 +6064,6 @@
 		-webkit-transition-delay: 3.15s;
 		-ms-transition-delay: 3.15s;
 		transition-delay: 3.15s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(23) .image img {
@@ -6134,9 +6071,6 @@
 		-webkit-transition-delay: 3.3s;
 		-ms-transition-delay: 3.3s;
 		transition-delay: 3.3s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(24) .image img {
@@ -6144,9 +6078,6 @@
 		-webkit-transition-delay: 3.45s;
 		-ms-transition-delay: 3.45s;
 		transition-delay: 3.45s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(25) .image img {
@@ -6154,9 +6085,6 @@
 		-webkit-transition-delay: 3.6s;
 		-ms-transition-delay: 3.6s;
 		transition-delay: 3.6s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(26) .image img {
@@ -6164,9 +6092,6 @@
 		-webkit-transition-delay: 3.75s;
 		-ms-transition-delay: 3.75s;
 		transition-delay: 3.75s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(27) .image img {
@@ -6174,9 +6099,6 @@
 		-webkit-transition-delay: 3.9s;
 		-ms-transition-delay: 3.9s;
 		transition-delay: 3.9s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(28) .image img {
@@ -6184,9 +6106,6 @@
 		-webkit-transition-delay: 4.05s;
 		-ms-transition-delay: 4.05s;
 		transition-delay: 4.05s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(29) .image img {
@@ -6194,9 +6113,6 @@
 		-webkit-transition-delay: 4.2s;
 		-ms-transition-delay: 4.2s;
 		transition-delay: 4.2s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(30) .image img {
@@ -6204,9 +6120,6 @@
 		-webkit-transition-delay: 4.35s;
 		-ms-transition-delay: 4.35s;
 		transition-delay: 4.35s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(31) .image img {
@@ -6214,9 +6127,6 @@
 		-webkit-transition-delay: 4.5s;
 		-ms-transition-delay: 4.5s;
 		transition-delay: 4.5s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(32) .image img {
@@ -6224,9 +6134,6 @@
 		-webkit-transition-delay: 4.65s;
 		-ms-transition-delay: 4.65s;
 		transition-delay: 4.65s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(33) .image img {
@@ -6234,9 +6141,6 @@
 		-webkit-transition-delay: 4.8s;
 		-ms-transition-delay: 4.8s;
 		transition-delay: 4.8s;
-		object-fit: cover;
-		height: 24rem;
-		position: absolute;
 	}
 
 	.gallery.onscroll-fade-in.is-inactive article .image img {
