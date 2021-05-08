@@ -10,7 +10,6 @@ const admin = require('firebase-admin');
 
 var api_key = 'key-02b0667991fa6a9066a80fff3622e744';
 var domain = 'sandbox84ab3f227837419caef3e84b60166189.mailgun.org';
-var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 admin.initializeApp();
 
