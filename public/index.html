@@ -280,7 +280,11 @@
                             <h3>Contact me for projects<br>or questions.</h3>
                         </header>
                         <div class="content">
-                            <form id="contactForm" v-show="showForm">
+                            <ul class="icons">
+                                <li><a href="www.linkedin.com/in/justbane" class="icon brands style2 fa-linkedin"><span class="label">Instagram</span></a></li>
+                                <li><a href="https://github.com/justbane" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+                            </ul>
+                            <!-- <form id="contactForm" v-show="showForm">
                                 <div class="field half first">
                                     <label :style="{ color: labelColor}" for="name">Name</label>
                                     <input  v-model="name" type="text" name="name" id="name">
@@ -306,7 +310,7 @@
                                 <ul class="actions">
                                     <li><button class="button" id="submit" @click.prevent="submit">Send Message</button></li>
                                 </ul>
-                            </form>
+                            </form> -->
                             <p v-show="!isValid" :style="{ color: labelColor}" v-text="statusMsg"></p>
                         </div>
                     </section>
