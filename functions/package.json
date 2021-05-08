@@ -4,7 +4,7 @@
   "dependencies": {
     "firebase-admin": "^9.1.1",
     "firebase-functions": "^3.11.0",
-    "mailgun-js": "~0.7.0"
+    "mailgun-js": "^0.22.0"
   },
   "private": true,
   "engines": {
