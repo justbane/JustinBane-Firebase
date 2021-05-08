@@ -4,3 +4,4 @@ node_modules
 .firebase
 package.json
 package-lock.json
+.DS_Store
