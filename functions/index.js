@@ -1,5 +1,13 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
+const express = require('express');
+const engines = require('consolidate');
+const hbs = require('handlebars');
+const app = express();
+
+app.engine('hbs', engines.handlebars);
+app.set('views', './views');
+app.set('view engine', 'hbs');
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
@@ -13,27 +21,4 @@ var domain = 'sandbox84ab3f227837419caef3e84b60166189.mailgun.org';
 
 admin.initializeApp();
 
-exports.sendContactEmail = functions.database.ref('/ContactMessages/{id}').onWrite((event, context) => {
-    const entry = event.after.val();
-
-    if (!entry) {
-        return false;
-    }
-
-    var mailData = {
-      from: entry.name + " <" + entry.email + ">",
-      to: 'justbane@gmail.com',
-      subject: entry.subject,
-      text: entry.name + " says:\n\n" + entry.message
-    };
-
-    return mailgun.messages().send(mailData).then(() => {
-        console.log('Success');
-        admin.database().ref('/ContactMessages/' + context.params.id).remove();
-    }).catch((error) => {
-        console.log(error);
-    });
-
-    //return null;
-
-});
+exports.app = functions.https.onRequest(app);
