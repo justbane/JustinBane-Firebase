@@ -21,4 +21,13 @@ var domain = 'sandbox84ab3f227837419caef3e84b60166189.mailgun.org';
 
 admin.initializeApp();
 
+// Routes
+app.get("/", (req, res) => {
+
+    // Render
+    res.render('index', {
+        'test': "Hello World... its a new day"
+    });
+});
+
 exports.app = functions.https.onRequest(app);
