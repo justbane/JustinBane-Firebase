@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 
     // Render
     res.render('index', {
-        'test': "Hello World... its a new day"
+        'name': "Justin Bane"
     });
 });
 

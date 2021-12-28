@@ -1,1 +1,346 @@
-{{ test }}
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://www.justinbane.com/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Justin Bane | Digital Solution Architect and Developer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+
+    <!-- Firebase setup -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCb3fz2lJK6s5n1wc35srAlxhIdQEN8JL4",
+            authDomain: "justinbane-com.firebaseapp.com",
+            databaseURL: "https://justinbane-com.firebaseio.com",
+            projectId: "justinbane-com",
+            storageBucket: "justinbane-com.appspot.com",
+            messagingSenderId: "892925702235"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body class="is-loading">
+    <div id="app">
+        
+        <!-- Wrapper -->
+        <div id="wrapper" class="divided">
+
+            <!-- Banner -->
+            <section class="banner style1 orient-left content-align-left image-position-left fullscreen onload-image-fade-in onload-content-fade-right">
+                <div class="content">
+                    <h1>{{ name }}</h1>
+                    <p class="major">A skillful and creative developer, I crave a good problem to solve. As a Technical Architect for <a href="http://www.hdmz.com/" target="_blank">HDMZ</a>, my days are filled with finding solutions and overcoming technology challenges
+                        for our clients.</p>
+                    <p>Throughout my career there have been 2 constants; technology and leadership. – I have more than 20 years of technical and development experience building large (and small) scale applications. I do not shy away from decision making or helping others wherever I can.</p>
+                    <ul class="actions horizontal">
+                        <li><a href="#programming" class="button wide smooth-scroll">Learn more</a></li>
+                        <li><a href="#skills" class="button smooth-scroll">Skills at a glance</a></li>
+                    </ul>
+                    <ul class="icons horizontal">
+                        <li><a href="https://www.linkedin.com/in/justbane" class="icon brands style2 fa-linkedin"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/justbane" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="/images/logos.png" alt="Justin Bane">
+                </div>
+            </section>
+
+            <!-- Spotlight -->
+            <section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in is-inactive" id="programming">
+                <div class="content">
+                    <blockquote>
+                        <strong>Programmer</strong><br> noun
+                        <ol>
+                            <li>
+                                an organism that turns coffee into software.
+                            </li>
+                        </ol>
+                    </blockquote>
+                    <p>I am a full stack web developer. By full stack I mean from the server (yes, I can setup an environment in Google Cloud Platform or AWS) to the application stack - frontend (JS/CSS/Frameworks) and backend (PHP/NodeJS/Frameworks). I have helped many clients and organizations see their projects realized.<br>
+                    <a href="#skills" class="smooth-scroll">Click here to see the software stacks I work with</a></p>
+                    <p>In my current position, I lead a development team creating web and mobile applications for life science companies. Making choices for architecture, infrastructure and teams. Outlining technical requirements to meet business needs. And thinking/planning for the future of the solution.</p>
+                    <p>As technology is always moving - I enjoy being part of and cultivating a team that is always learning. I do my best to share
+                    knowledge and promote learning in my teams.</p>
+
+                    <ul class="actions horizontal">
+                        <li><a href="#web-dev-section" class="button smooth-scroll">Projects</a></li>
+                        <!-- <li><a href="#mobile-dev-section" class="button smooth-scroll">Mobile development</a></li> -->
+                        <li><a href="#contact-me" class="button smooth-scroll">Contact me</a></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img style="transform: rotate(90deg);" src="/images/p+c=c.png" alt="">
+                </div>
+            </section>
+
+            <!-- Intro -->
+            <section id="web-dev-section" class="wrapper style1 align-center">
+                <div class="inner">
+                    <h2>Project Samples</h2>
+                    <p>The following section shows some of the website or web application projects I have recently been involved with either in a leadership role or primary development position.</p>
+                    <ul class="actions horizontal">
+                        <li><a href="#web-dev-1" class="button smooth-scroll">Next</a></li>
+                        <li><a href="#contact-me" class="button smooth-scroll">Contact me</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Spotlight -->
+            <section id="web-dev-1" class="spotlight style1 color5 invert onscroll-image-fade-in content-align-left image-position-left orient-right">
+                <div class="content">
+                    <h2>Cepheid</h2>
+                    <p>Cepheid is the future of molecular diagnostic testing. This enterprise solution required not just a CMS but also a PIM and DAM integrated solution. Managed by multiple internal stakeholders to provide test information and support to Cepheid's vendor and clinic customers.</p>
+                    <p>The site is used by multiple departments to manage product data, support documents and digital assets.</p>
+                    <p>
+                        <strong>Built with:</strong> PIM (Pimcore), DAM (Pimcore), PHP (Symfony), MySQL, JavaScript (Vue)
+                    </p>
+                    <ul class="actions horizontal">
+                        <li><a href="http://www.cepheid.com" class="button">Go to Project</a></li>
+                        <li><a href="#web-dev-2" class="button smooth-scroll">Next</a></li>
+                    </ul>
+                </div>
+                <div class="image cinema">
+                    <img src="/images/cepheid.jpg" alt="Gilead Research Scholars">
+                </div>
+            </section>
+
+            <!-- Spotlight -->
+            <section id="web-dev-2" class="spotlight style1 color1 invert onscroll-image-fade-in content-align-left image-position-left orient-left is-inactive">
+                <div class="content">
+                    <h2>Gilead Research Scholars Portals</h2>
+                    <p>Gilead needed a portal for research scientists to apply for funding. It needed to allow a 3rd party committee to score and vote on applications as well as allow communication between the reviewers and review managers. This portal comprises
+                        a full user/group permission system, a committee approval workflow, scoring system, and a notification system for users and committee members.</p>
+                    <p>
+                        <strong>Built with:</strong> PHP (Symfony), MySQL, JavaScript (Vue)
+                    </p>
+                    <ul class="actions horizontal">
+                        <li><a href="http://researchscholars.gilead.com" class="button">Go to Project</a></li>
+                        <li><a href="#web-dev-3" class="button smooth-scroll">Next</a></li>
+                    </ul>
+                </div>
+                <div class="image cinema">
+                    <img src="/images/gilead.jpg" alt="Gilead Research Scholars">
+                </div>
+            </section>
+          
+            <!-- Spotlight -->
+            <section id="web-dev-3" class="spotlight style1 color3 invert onscroll-image-fade-in content-align-left image-position-left orient-right is-inactive">
+                <div class="content">
+                    <h2>Nektar</h2>
+                    <p>Nektar came to us in need of a complete refresh of their site and presence. This site features asynchronous data feeds. User/group permissions setup to allow editing sections of the site by individual departments.</p>
+                    <p>
+                        <strong>Built with:</strong> PHP (Symfony), Concrete5 (CMS), MySQL, JavaScript
+                    </p>
+                    <ul class="actions horizontal">
+                        <li><a href="http://www.nektar.com" class="button">Go to Project</a></li>
+                        <li><a href="#skills" class="button smooth-scroll">Next</a></li>
+                    </ul>
+                </div>
+                <div class="image cinema">
+                    <img src="/images/Nektar.jpg" alt="Nektar.com">
+                </div>
+            </section>
+            
+            <!-- Items -->
+            <section class="wrapper style1 align-center onscroll-fade-in is-inactive" id="skills">
+                <div class="inner">
+                    <h2>Skillset Overview</h2>
+                    <p>I have a wide range of experience and am always looking to improve. Here are some of the technologies I use daily in my current projects.</p>
+                    <div class="items style2 small onscroll-fade-in is-inactive">
+                        <section>
+                            <div class="inner">
+                                <span class="icon style2 major fa-code"></span>
+                                <h3>Server Side</h3>
+                                <section>
+                                    <div class="content">
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>PHP</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Node.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Swift</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Python</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="inner">
+                                <span class="icon style2 major fa-css3"></span>
+                                <h3>Client Side</h3>
+                                <section>
+                                    <div class="content">
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Javascript</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>jQuery</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vue</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CSS/LESS/SASS</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bootstrap</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="inner">
+                                <span class="icon style2 major fa-code-fork"></span>
+                                <h3>Frameworks &<br>Applications</h3>
+                                <section>
+                                    <div class="content">
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Symfony</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pimcore (PHP + Symfony)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ElasticSearch (Configuration and Implementation)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Drupal/Wordpress<br>Joomla/Concrete5 (PHP)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Express (Node.js)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="inner">
+                                <span class="icon style2 major fa-apple"></span>
+                                <h3>Mobile</h3>
+                                <section>
+                                    <div class="content">
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Swift/iOS</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flutter/Dart</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ARKit/SceneKit (Augmented Reality &amp; 3D Gaming)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Core Location, Core Data, Local &amp; Push notifications</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Firebase, AWS (BaaS)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <ul class="actions vertical">
+                    <li><a href="#contact-me" class="button smooth-scroll">Contact me below!</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Contact -->
+        <section class="wrapper style1 align-center" id="contact-me">
+            <div class="inner">
+                <div class="index align-left">
+                    <section>
+                        <header>
+                            <h3>Contact me for projects<br>or questions.</h3>
+                        </header>
+                        <div class="content">
+                            <ul class="icons">
+                                <li><a href="https://www.linkedin.com/in/justbane" class="icon brands style2 fa-linkedin"><span class="label">Instagram</span></a></li>
+                                <li><a href="https://github.com/justbane" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+                            </ul>
+                            <!-- <form id="contactForm" v-show="showForm">
+                                <div class="field half first">
+                                    <label :style="{ color: labelColor}" for="name">Name</label>
+                                    <input  v-model="name" type="text" name="name" id="name">
+                                </div>
+                                <div class="field half">
+                                    <label :style="{ color: labelColor}" for="email">Email</label>
+                                    <input v-model="email" type="email" name="email" id="email">
+                                </div>
+                                <div class="field">
+                                    <label :style="{ color: labelColor}" for="subject">Subject</label>
+                                    <div class="select-wrapper">
+                                        <select v-model="selectedSubject" name="subject" id="subject">
+                                            <option v-for="subject in subjects">
+                                                {{ subject }}
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label :style="{ color: labelColor}" for="message">Message</label>
+                                    <textarea  v-model="message" name="message" id="message" rows="6"></textarea>
+                                </div>
+                                <ul class="actions">
+                                    <li><button class="button" id="submit" @click.prevent="submit">Send Message</button></li>
+                                </ul>
+                            </form> -->
+                            <p v-show="!isValid" :style="{ color: labelColor}" v-text="statusMsg"></p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
