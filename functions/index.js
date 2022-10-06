@@ -23,10 +23,15 @@ admin.initializeApp();
 
 // Routes
 app.get("/", (req, res) => {
-
     // Render
     res.render('index', {
         'name': "Justin Bane"
+    });
+});
+app.get("/shop", (req, res) => {
+    // Render
+    res.render('shop', {
+        'name': "Justin's Shop"
     });
 });
 

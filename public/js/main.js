@@ -8,6 +8,7 @@ var app = new Vue({
         statusMsg: 'Pease complete all fields!',
         name: '',
         email: '',
+        coupon: '',
         selectedSubject: '',
         message: '',
         subjects: ['Just saying hi', 'Lets work together', 'Random request', 'Question for you'],
@@ -16,14 +17,14 @@ var app = new Vue({
         submit: function() {
             // Get a reference to the database service
             var database = firebase.database();
-
-                console.log(this.name);
+            console.log(this.name);
 
             if(this.message != "" && this.name != "" && this.email != "") {
                 database.ref('/ContactMessages/').push({
                   message: this.message,
                   name: this.name,
                   email: this.email,
+                  coupon: this.coupon,
                   subject: this.selectedSubject,
                   timestamp: new Date().getTime(),
               });
