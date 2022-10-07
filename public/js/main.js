@@ -19,18 +19,20 @@ var app = new Vue({
             var database = firebase.database();
             console.log(this.name);
 
-            if(this.message != "" && this.name != "" && this.email != "") {
-                database.ref('/ContactMessages/').push({
-                  message: this.message,
-                  name: this.name,
-                  email: this.email,
-                  coupon: this.coupon,
-                  subject: this.selectedSubject,
-                  timestamp: new Date().getTime(),
-              });
-              this.showForm = false;
+            if(this.coupon != "" && this.name != "" && this.email != "") {
+            // if(this.message != "" && this.name != "" && this.email != "") {
+            //     database.ref('/ContactMessages/').push({
+            //         message: this.message,
+            //         name: this.name,
+            //         email: this.email,
+            //         coupon: this.coupon,
+            //         subject: this.selectedSubject,
+            //         timestamp: new Date().getTime(),
+            //     });
+            //   this.showForm = false;
               this.labelColor = 'green';
-              this.statusMsg = "Thanks, " + this.name + "! Message received. I'll get back to you asap."
+            //   this.statusMsg = "Thanks, " + this.name + "! Message received. I'll get back to you asap."
+              this.statusMsg = "Thanks, " + this.name + "!. You discount has been applied to your account"
               this.isValid = false;
             } else {
                 this.isValid = false;

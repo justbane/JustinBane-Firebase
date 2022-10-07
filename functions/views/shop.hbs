@@ -41,7 +41,24 @@
                 <div class="content">
                     <h1>{{ name }}</h1>
                     <p class="major">Buy all the things!!</p>
-                    
+                    <form id="contactForm" v-show="showForm">
+                        <div class="field half first">
+                            <label :style="{ color: labelColor}" for="name">Name</label>
+                            <input  v-model="name" type="text" name="name" id="name">
+                        </div>
+                        <div class="field half">
+                            <label :style="{ color: labelColor}" for="email">Email</label>
+                            <input v-model="email" type="email" name="email" id="email">
+                        </div>
+                        <div class="field">
+                            <label :style="{ color: labelColor}" for="email">Coupon code</label>
+                            <input v-model="coupon" type="text" name="coupon" id="coupon">
+                        </div>
+                        <ul class="actions">
+                            <li><button class="button" id="submit" @click.prevent="submit">Send Message</button></li>
+                        </ul>
+                    </form>
+                    <p v-show="!isValid" :style="{ color: labelColor}" v-text="statusMsg"></p>
                 </div>
                 <div class="image">
                     <img src="/images/logos.png" alt="Justin Bane">
