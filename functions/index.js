@@ -28,11 +28,5 @@ app.get("/", (req, res) => {
         'name': "Justin Bane"
     });
 });
-app.get("/shop", (req, res) => {
-    // Render
-    res.render('shop', {
-        'name': "Justin's Shop"
-    });
-});
 
 exports.app = functions.https.onRequest(app);
